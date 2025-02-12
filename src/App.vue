@@ -18,7 +18,6 @@
 import {mapGetters} from "vuex";
 import MainNavigation from "./components/MainNavigation";
 import MainFooter from "./components/MainFooter";
-import {contextMenuListener} from "@/assets/common";
 import BackgroundPlayer from "@/components/BackgroundPlayer";
 
 export default {
@@ -54,7 +53,6 @@ export default {
     }
   },
   mounted(){
-    contextMenuListener();
     window.addEventListener('scroll', this.updateScroll);
   }
 };
